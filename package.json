@@ -1,0 +1,30 @@
+{
+  "name": "stone-city",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Сайт компании Каменный город",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "7.1.x",
+    "browser-sync": "2.18.x",
+    "gulp": "3.9.x",
+    "gulp-plumber": "1.1.x",
+    "gulp-postcss": "7.0.x",
+    "gulp-sass": "3.1.x",
+    "stylelint": "8.4.x",
+    "stylelint-config-htmlacademy": "0.1.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint .",
+    "test": "npm run editorconfig",
+    "start": "gulp serve"
+  },
+  "editorconfig-cli": [
+    "*.json",
+    "source/*.html"
+  ],
+  "engines": {
+    "node": "8.9"
+  }
+}
