@@ -1,0 +1,25 @@
+.programs__heading {
+  @include heading;
+}
+
+.programs__list {
+  @include list-reset;
+}
+
+.programs__category, .programs__speaker {
+  text-transform: uppercase;
+  font-family: "Circe Extra-Bold", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.programs__title {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.programs__date {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}

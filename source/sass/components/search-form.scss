@@ -1,0 +1,15 @@
+.search-form {
+  
+}
+
+.search-form__input {
+  border: none;
+  background-color: $white;
+  font: inherit;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.search-form__button {
+  @include button;
+}

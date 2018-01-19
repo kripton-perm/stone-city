@@ -1,0 +1,29 @@
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.reviews__author {
+  margin: 0;
+  padding: 0;
+
+  figcaption {
+    font-family: "Circe Extra-Bold", "Arial", sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  .reviews__position {
+    display: block;
+    font-family: "Circe", "Arial", sans-serif;
+    font-size: 18px;
+    text-transform: none;
+    font-weight: 300;
+  }
+}

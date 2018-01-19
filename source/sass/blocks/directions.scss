@@ -1,0 +1,20 @@
+.directions__heading {
+  @include heading;
+}
+
+.directions__list {
+  @include list-reset;
+}
+
+.directions__title {
+  font-family: "Circe Extra-Bold", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.directions__description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 31px;
+}

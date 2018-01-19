@@ -1,0 +1,14 @@
+.footer-menu__list {
+  @include list-reset;
+}
+
+.footer-menu__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

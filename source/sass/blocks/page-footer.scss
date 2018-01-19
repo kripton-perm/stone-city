@@ -1,0 +1,45 @@
+.page-footer {
+  background-color: #363536;
+  color: $white;
+}
+
+.page-footer__subscribe-text {
+  color: #fdfdfd;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.07px;
+  a {
+    text-decoration: underline;
+  }
+}
+
+.page-footer__subscribe-input {
+  border-radius: 6px;
+  border: 1px solid #898989;
+  background-color: $white;
+  color: #959595;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 34px;
+}
+
+.page-footer__subscribe-button {
+  @include button;
+}
+
+.page-footer__contacts {
+  color: #fdfdfd;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.page-footer__phone {
+  letter-spacing: 0.09px;
+}
+
+.page-footer__copyright {
+  font-size: 12px;
+  letter-spacing: 0.08px;
+}

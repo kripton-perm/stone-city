@@ -1,0 +1,14 @@
+.main-menu__list {
+  @include list-reset;
+}
+
+.main-menu__link {
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  &:hover,
+  &:focus {
+    color: $grey;
+  }
+}
