@@ -1,0 +1,7 @@
+.clients__heading {
+  @include heading;
+}
+
+.clients__list {
+  @include list-reset;
+}

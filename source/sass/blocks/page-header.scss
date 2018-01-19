@@ -1,0 +1,32 @@
+.page-header {
+  color: $white;
+  background-color: $black;
+}
+
+.page-header__logo {
+  position: relative;
+  width: 110px;
+  height: 37px;
+  &-full,
+  &-cut {
+    position: absolute;
+  }
+  &-full {
+    opacity: 0;
+  }
+  &-link:hover &-cut,
+  &-link:focus &-cut {
+    opacity: 0;
+  }
+  &-link:hover &-full,
+  &-link:focus &-full {
+    opacity: 1;
+  }
+}
+
+.page-header__search-form {
+  
+}
+
+
+

@@ -1,0 +1,23 @@
+.subscribe {
+  color: $white;
+  background-color: $black;
+}
+
+.subscribe__heading {
+  font-family: "Circe Extra-Bold", "Arial", sans-serif;
+  font-size: 37px;
+  font-weight: 400;
+  letter-spacing: 0.23px;
+  line-height: 34px;
+}
+
+.subscribe__text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+.subscribe__button {
+  @include button;
+}

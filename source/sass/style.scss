@@ -1,0 +1,23 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "base.scss";
+
+@import "blocks/visually-hidden.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/banner.scss";
+@import "blocks/intro.scss";
+@import "blocks/numbers.scss";
+@import "blocks/directions.scss";
+@import "blocks/programs.scss";
+@import "blocks/subscribe.scss";
+@import "blocks/reviews.scss";
+@import "blocks/clients.scss";
+@import "blocks/news.scss";
+
+@import "components/main-menu.scss";
+@import "components/footer-menu.scss";
+@import "components/search-form.scss";
+@import "components/social.scss";
+@import "components/controls.scss";

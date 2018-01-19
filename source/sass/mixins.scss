@@ -1,0 +1,64 @@
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button {
+  border: none;
+  background-color: $button-bg-color;
+  color: $white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  border-radius: 6px;
+}
+
+@mixin heading {
+  font-family: "Circe Extra-Bold", "Arial", sans-serif;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+@mixin tablet($name, $value){
+  @media screen and (min-width: $break_tablet){
+    #{$name}: $value;
+  }
+}
+
+@mixin tablet-block(){
+  @media screen and (min-width: $break_tablet){
+    @content;
+  }
+}
+
+@mixin desktop($name, $value){
+  @media screen and (min-width: $break_desktop){
+    #{$name}: $value;
+  }
+}
+
+@mixin desktop-block(){
+  @media screen and (min-width: $break_desktop){
+    @content;
+  }
+}
+
+@mixin from($min_width){
+  @media screen and (min-width: $min_width){
+    @content;
+  }
+}
+
+@mixin to($max_width){
+  @media screen and (max-width: $max_width){
+    @content;
+  }
+}
+
+@mixin from-to($min_width, $max_width){
+  @media screen and (min-width: $min_width) and (max-width: $max_width){
+    @content;
+  }
+}

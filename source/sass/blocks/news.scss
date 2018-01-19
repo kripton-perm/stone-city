@@ -1,0 +1,43 @@
+.news__heading {
+  @include heading;
+  margin: 0;
+  padding: 0;
+
+  a {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $black;
+      opacity: 0.71;
+    }
+    &:hover,
+    &:focus {
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.news__list {
+  @include list-reset;
+}
+
+.news__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.news__date {
+  display: block;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.26px;
+  line-height: 18px;
+}
