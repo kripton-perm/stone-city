@@ -1,9 +1,33 @@
+.programs {
+  padding-bottom: 88px;
+} 
+
+.programs__wrapper {
+  @include wrapper;
+  padding-bottom: 70px;
+  position: relative;
+}
+
 .programs__heading {
   @include heading;
+  letter-spacing: -0.3px;
+  margin-bottom: 61px;
 }
 
 .programs__list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.programs__item {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid #b7b7b7;
+  background-color: #ffffff;
+  padding-bottom: 23px;
 }
 
 .programs__category, .programs__speaker {
@@ -16,10 +40,35 @@
 .programs__title {
   font-size: 24px;
   line-height: 34px;
+  order: 1;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .programs__date {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.programs__picture {
+  margin-top: 0;
+  margin-bottom: 2px;
+  order: -1;
+  img {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+}
+
+.programs__controls {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -8,10 +8,13 @@
   border: none;
   background-color: $button-bg-color;
   color: $white;
+  font-family: "Circe", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 34px;
   border-radius: 6px;
+  padding: 2px 32px;
+  cursor: pointer;
 }
 
 @mixin heading {
@@ -19,6 +22,26 @@
   font-size: 37px;
   font-weight: 400;
   line-height: 47px;
+  text-align: center;
+}
+
+@mixin wrapper(){
+  padding-left: $fields;
+  padding-right: $fields;
+  margin: 0 auto;
+  width: $mobile_width - 2 * $fields;
+
+  @include tablet-block(){
+    padding-left: $fields_tablet;
+    padding-right: $fields_tablet;
+    width: $break_tablet - 2 * $fields_tablet;
+  }
+
+  @include desktop-block(){
+    padding-left: $fields_desktop;
+    padding-right: $fields_desktop;
+    width: $break_desktop - 2 * $fields_desktop;
+  }
 }
 
 @mixin tablet($name, $value){
