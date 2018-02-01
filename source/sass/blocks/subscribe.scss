@@ -1,6 +1,15 @@
 .subscribe {
   color: $white;
   background-color: $black;
+  background-image: url('../img/bg-subscribe.jpg');
+  background-position: center;
+  text-align: center;
+  padding-top: 59px;
+  padding-bottom: 95px;
+}
+
+.subscribe__wrapper {
+  @include wrapper;
 }
 
 .subscribe__heading {
@@ -9,6 +18,7 @@
   font-weight: 400;
   letter-spacing: 0.23px;
   line-height: 34px;
+  margin-bottom: 50px;
 }
 
 .subscribe__text {
@@ -16,8 +26,17 @@
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.15px;
+  padding-left: 90px;
+  padding-right: 90px;
+  margin-bottom: 60px;
 }
 
 .subscribe__button {
   @include button;
+  font-size: 22px;
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 0.14px;
 }

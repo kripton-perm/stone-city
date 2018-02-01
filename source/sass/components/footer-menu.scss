@@ -1,5 +1,10 @@
 .footer-menu__list {
   @include list-reset;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .footer-menu__link {

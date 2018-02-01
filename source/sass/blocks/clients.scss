@@ -1,7 +1,20 @@
+.clients {
+  padding-top: 50px;
+  padding-bottom: 62px;
+}
+
+.clients__wrapper {
+  @include wrapper;
+}
+
 .clients__heading {
   @include heading;
+  margin-bottom: 55px;
 }
 
 .clients__list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

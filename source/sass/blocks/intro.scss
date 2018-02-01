@@ -1,9 +1,22 @@
+.intro {
+  margin-top: 560px;
+}
+
+.intro__wrapper {
+  @include wrapper;
+  padding-top: 50px;
+}
+
 .intro__heading {
   @include heading;
+  margin-bottom: 55px;
 }
 
 .intro__description {
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
+  padding-left: 130px;
+  padding-right: 130px;
+  text-align: center;
 }

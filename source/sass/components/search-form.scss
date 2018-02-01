@@ -1,15 +1,23 @@
 .search-form {
-  
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-form__input {
-  border: none;
+  box-sizing: border-box;
+  border: 1px solid #898989;
+  border-radius: 6px;
   background-color: $white;
   font: inherit;
   font-weight: 300;
   font-size: 18px;
+  flex-grow: 1;
+  margin-left: -1px;
+  margin-right: 8px;
+  padding: 10px 20px;
 }
 
 .search-form__button {
   @include button;
+  letter-spacing: 0.11px;
 }
